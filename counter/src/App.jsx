@@ -5,7 +5,10 @@ function App() {
     const addValue=()=>{
     if(counter<20){
     counter = counter+1
-    setcounter(counter)
+      setcounter((counter)=>counter+1)
+      setcounter(counter=>counter+1)
+      setcounter(counter=>counter+1)
+
     }
   }
   const decreasevalue=()=>{
